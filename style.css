@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+    height: 10vh;
+    background-color: #007bff;
+    text-align: center;
+
+  align-content: center;
+}
+nav h1{
+    font-size: 1.4rem;
+    color: #333333;
+
+}
+main{
+    height: 60vh;
+    width: 100%;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
+}
+main h1{
+    font-size: 1.3rem;
+    margin-left: 7vw;
+    color: #007bff;
+}
+main p{
+    font-size: 0.9rem;
+    margin:0 7vw;
+    color: #333333;
+}
+.generatepass{
+    background-color: #f9f9f9;
+}
