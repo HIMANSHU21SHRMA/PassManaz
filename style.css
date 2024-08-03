@@ -28,17 +28,92 @@ main{
     flex-direction: column;
     justify-content: center;
     gap: 3vh;
+    border-bottom: 8px solid #ccc;
 }
 main h1{
     font-size: 1.3rem;
     margin-left: 7vw;
     color: #007bff;
+
+}
+main span{
+    animation: popup ;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+@keyframes popup {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 main p{
     font-size: 0.9rem;
     margin:0 7vw;
     color: #333333;
 }
-.generatepass{
-    background-color: #f9f9f9;
+.page2{
+    height: 60vh;
+    width: 100%;
+    background: #f9f9f9;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.generat{
+    display: flex;
+     flex-direction: column;
+     /* padding-left: 10vh;   */
+     gap: 3vh;
+
+
+}
+.text-inp input[type="text"]{
+    width: 20vw;
+    height: 5vh;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    outline: none;
+   padding-left: 2vh;
+    font-size: 0.7rem;
+}
+::placeholder{
+    font-size: 0.6rem;
+}
+.generat label{
+    font-size: 0.9rem;
+    color: #333333;
+}
+.text-inp i{
+    background-color: #000;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row input[type="checkbox"]{
+   outline: 0;
+   border: 0;    
+   color: #000;
+   border: 2px soldi #fff;
+   background-color: #fff;
+}
+.generat button{
+    font-size: 1rem;
+    padding: 1vh;
+    border:2px solid #ccc;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 10px;
+    transition: all 0.33s ease;
+
+}
+.generat button:hover{
+    background-color: #0056b3;
+    color: beige;
+    box-shadow: 1px 2px 3px black;
+
 }

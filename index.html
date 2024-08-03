@@ -19,11 +19,30 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio numquam asperiores voluptates amet quod beatae dignissimos harum saepe repellendus, impedit sit molestiae nemo laborum mollitia earum reiciendis voluptate eos alias 
       </p>
   </main>
-  <div class="generatepass">
-    <input type="text">
-    
-    
-  </div>
+ <div class="page2">
+  <div class="generat">
+    <h2>Gen New Pass</h2>
+    <div class="text-inp">
+      <input type="text" id="showBox" disabled placeholder="PASSMANAZ">
+       
+    </div>
+   <div class="row">
+    <label for="lowercase">Include lowercase Letters (a-z)</label>
+    <input type="checkbox" name="lowercase" id="lowercase">
+   </div>
+   <div class="row">
+    <label for="number">Include Numbers (0-9)</label>
+    <input type="checkbox" name="mumber" id="number">
+   </div>
+   <div class="row">
+    <label for="symbols">Include Symbols (@-!)</label>
+    <input type="checkbox" name="lowercase" id="symbols">
+   </div> 
 
+   <button id="genBtn">Generate</button>
+
+  </div>
+ </div>
+ <script src="app.js"></script>
 </body>
 </html>
