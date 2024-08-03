@@ -8,6 +8,7 @@ html , body{
     width: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/* page one */
 nav{
     height: 10vh;
     background-color: #007bff;
@@ -29,38 +30,51 @@ main{
     justify-content: center;
     gap: 3vh;
     border-bottom: 8px solid #ccc;
+    
 }
 main h1{
-    font-size: 1.3rem;
+    width: 70%; 
+    font-size: 6vw; 
+    
     margin-left: 7vw;
     color: #007bff;
+    font-family: monospace;
+    border-right: 3px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(15), cursor .6s step-end infinite alternate;
+}
 
-}
-main span{
-    animation: popup ;
-    animation: name duration timing-function delay iteration-count direction fill-mode;
-}
-@keyframes popup {
-    0%{
-        transform: scale(0);
+
+/* Cursor animation */
+@keyframes cursor {
+    50% {
+        border-color: transparent;
     }
-    100%{
-        transform: scale(1);
+}
+
+/* Animation for typing */
+@keyframes typing {
+    from {
+        width: 0;
     }
+
 }
 main p{
     font-size: 0.9rem;
     margin:0 7vw;
     color: #333333;
 }
+/* page two */
 .page2{
     height: 60vh;
     width: 100%;
     background: #f9f9f9;
-   
+    border-bottom: 8px solid #ccc;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .generat{
     display: flex;
@@ -71,6 +85,7 @@ main p{
 
 }
 .text-inp input[type="text"]{
+    min-width: 200px;
     width: 20vw;
     height: 5vh;
     background-color: #ffffff;
@@ -86,9 +101,7 @@ main p{
     font-size: 0.9rem;
     color: #333333;
 }
-.text-inp i{
-    background-color: #000;
-}
+
 .row{
     display: flex;
     align-items: center;
@@ -116,4 +129,10 @@ main p{
     color: beige;
     box-shadow: 1px 2px 3px black;
 
+}
+/* page three */
+.page3{
+height: 60vh;
+width: 100%;
+background-color: #f9f9f9;
 }
