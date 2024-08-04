@@ -114,7 +114,7 @@ main p{
    border: 2px soldi #fff;
    background-color: #fff;
 }
-.generat button{
+.generat button, #submit{
     font-size: 1rem;
     padding: 1vh;
     border:2px solid #ccc;
@@ -124,7 +124,7 @@ main p{
     transition: all 0.33s ease;
 
 }
-.generat button:hover{
+.generat button:hover, #submit:hover{
     background-color: #0056b3;
     color: beige;
     box-shadow: 1px 2px 3px black;
@@ -132,7 +132,88 @@ main p{
 }
 /* page three */
 .page3{
-height: 60vh;
+height: 100vh;
 width: 100%;
 background-color: #f9f9f9;
+}
+
+section{
+    width: 40%; 
+    height: 16vh;
+    font-size: 5vw; 
+    margin-left: 7vw;
+    color: #007bff;
+    font-family: monospace;
+    border-right: 3px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(15), cursor .6s step-end infinite alternate;
+}
+
+.infomation{
+    height: 60vh;
+    width: 100%;
+    padding:0 7vh;
+    margin-top: 7vh;
+    border-radius: 16px;
+    display: flex;
+   justify-content: space-evenly;
+
+}
+
+.infomation form{
+    width: 38%;
+    height: 100%;
+    border: 2px solid #ccc;
+    display: flex;
+    box-shadow: 4px 3px 30px #ccceee;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.infomation h1{
+    font-size: 1.5rem;
+    color: #333333;
+    
+}
+
+.infomation h1 span{
+    border-bottom: 2px solid #007bff;
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+}
+.input-group:nth-child(2){
+    margin-top: 4vh;
+}
+.input-group label{
+    flex-basis: 28%;
+    font-size: 0.9rem;
+    margin-left: 5vh;
+}
+.input-group input{
+    flex-basis: 58%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccceee;
+    padding: 2vh 0;
+    color:#333333 ;
+    font-size: 1rem;
+}
+#submit{
+    margin-top: 2v;
+    width: 10vw;
+ 
+
+}
+.right{
+    height: 100%;
+    width: 60%;
+    background-color: red;
 }
