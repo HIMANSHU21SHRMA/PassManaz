@@ -157,6 +157,7 @@ section{
     margin-top: 7vh;
     border-radius: 16px;
     display: flex;
+    gap: 7vh;
    justify-content: space-evenly;
 
 }
@@ -170,6 +171,25 @@ section{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+}
+.animation-from{
+    animation: shake 0.2s linear 2;
+
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0px);
+    }
+    33%{
+        transform: translateX(-20px);
+    }
+    66% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(20px);
+    }
 }
 .infomation h1{
     font-size: 1.5rem;
@@ -215,5 +235,43 @@ section{
 .right{
     height: 100%;
     width: 60%;
+    border: 2px solid #ccc;
+    display: flex;
+    box-shadow: 4px 3px 30px #ccceee;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    overflow-y: scroll;
+   
+}
+.right table{
+    margin-top: 2vh;
+    border: 3px solid #ccceee;
+    width: 90%;
+    text-align: center;
+}
+
+.right table th{
+    font-size: 0.9rem;
+    border-right: 2px solid #ccceee;
+    border-bottom: 2px solid #ccceee;
+  
+}
+.right table th:last-child{
+    border-right: 0;
+}
+.right table td{
+     font-size: 0.7rem;
+     border-right: 2px solid #ccceee;
+}
+.right table td:last-child{
+    border-right: 0;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.right table td:last-child:hover{
     background-color: red;
+    border-radius: 2px;
+    padding: 1px;
 }
